@@ -204,7 +204,7 @@ function inputTests_featureset2(){
 		return false;
 	}
 	var errorPos = testError.position();
-	var inputPos = $("#testInput").position()
+	var inputPos = $("#testInput").position();
 	if(errorPos.left!==inputPos.left || errorPos.top <= inputPos.top){
 		displayMessage('Error with Input.showError: position of .inputError element is not below the position of the input. ');
 		return false;
